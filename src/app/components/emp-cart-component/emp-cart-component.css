@@ -1,0 +1,17 @@
+.empcard{
+    width: 300px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.card-header{
+    background-image: linear-gradient(to left,rgb(178, 238, 251), rgb(231, 231, 231));
+}
+.card-body{
+     background-image: linear-gradient(to left,rgb(238, 243, 244), rgb(189, 231, 191));
+}   
+img{
+    filter: drop-shadow(1px 1px 20px rgb(248, 245, 245));
+}

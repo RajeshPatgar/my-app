@@ -1,0 +1,30 @@
+<!-- <p>emp-cart-component works!</p>
+<div style="width:350px;height:280px;border: 2px solid black;">
+<h1 >{{emp.empId}}</h1>
+<h1>{{emp.empName}}</h1>
+<h1>{{emp.gender}}</h1>
+<h1>{{emp.address}}</h1>
+</div> -->
+<div class="container mt-3">
+  <div class="empcard card">
+    <div class="card-header">
+      {{ emp.empName }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">ID: {{ emp.empId }}</h5>
+      <h5 class="card-title">Gender: {{ emp.gender }}</h5>
+      <h5 class="card-title">Address: {{ emp.address }}</h5>
+      <p class="card-text">Hey, your data will be safe here..!</p>
+      <a href="https://www.youtube.com/" target="_blank" class="btn btn-primary">Go somewhere</a>
+
+      <!-- Show image only if gender is Male -->
+      <img *ngIf="emp.gender === 'Male'" 
+           width="100px" 
+           src="https://img.freepik.com/premium-photo/male-female-profile-avatar-user-avatars-gender-icons_1020867-75532.jpg" 
+           alt="gender">
+           <img *ngIf="emp.gender === 'Female'" 
+           width="100px" 
+           src="https://img.freepik.com/premium-photo/male-female-profile-avatar-user-avatars-gender-icons_1020867-74940.jpg" alt="gender">
+    </div>
+  </div>
+</div>
