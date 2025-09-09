@@ -1,0 +1,84 @@
+/* Wrapper to center the box */
+.login-wrapper {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  min-height: 80vh;          /* vertical space for centering */
+}
+
+/* Login box styling */
+.login-box {
+  width: 360px;              /* medium size */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Inputs */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Checkbox */
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check input {
+  margin-right: 8px;
+}
+
+/* Button */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.btn-login:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

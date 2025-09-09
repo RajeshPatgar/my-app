@@ -8,6 +8,7 @@ import { EmpFormComponent } from './emp-form-component/emp-form.component';
   standalone: false,
   styleUrl: './app.css'
 })
+
 export class App {
   protected readonly title = signal('my-app');
   msg:string="Good morning,"

@@ -8,18 +8,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmpFormComponent } from './emp-form-component/emp-form.component';
 import { MenuComponent } from './menu-component/menu-component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login.component/login.component';
 @NgModule({
   declarations: [
     App,
     Employees,
     EmpCartComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,HttpClientModule,
     FormsModule,
-     EmpFormComponent,
+    
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
