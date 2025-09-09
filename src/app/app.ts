@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import {Employee} from './employee';
 import { Employees } from './components/employees/employees';
+import { EmpFormComponent } from './emp-form-component/emp-form.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',

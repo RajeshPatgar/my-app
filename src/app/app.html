@@ -357,9 +357,11 @@ Hello
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 <button style="margin:40px" a">Login/SignUp page</button>   -->
-Hello
-{{msg}}
-<div *ngFor="let n of nums">
+<app-menu-component></app-menu-component>
+<router-outlet></router-outlet>
+
+
+<!-- <div *ngFor="let n of nums">
   <p>{{n}}</p>
 </div>
 <ol>
@@ -367,5 +369,5 @@ Hello
   <li>Name: {{ emp.empName }}</li>
   <li>Gender: {{ emp.gender }}</li>
   <li>Address: {{ emp.address }}</li>
-</ol>
-<app-employees></app-employees>
+</ol> -->
+<!-- <app-employees></app-employees> -->
